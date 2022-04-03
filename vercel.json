@@ -10,11 +10,11 @@
           "has": [
             {
               "type": "header",
-              "key": ":method",
-              "value": "OPTIONS"
+              "key": "Access-Control-Request-Headers",
+              "value": "referrer-policy,requestverificationtoken,x-requested-with"
             }
           ],
-          "destination": "https://google.com/"
+          "destination": "https://cebapi.requestcatcher.com/:match*"
         },
         {
             "source": "/:match*",
