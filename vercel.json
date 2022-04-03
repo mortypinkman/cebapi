@@ -6,6 +6,17 @@
             "destination": "https://cebcare.ceb.lk/"
         },
         {
+          "source": "/:match*",
+          "has": [
+            {
+              "type": "header",
+              "key": ":method",
+              "value": "OPTIONS"
+            }
+          ],
+          "destination": "https://google.com/"
+        },
+        {
             "source": "/:match*",
             "destination": "https://cebcare.ceb.lk/:match*"
         }
